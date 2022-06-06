@@ -23,11 +23,11 @@ public class User {
 
    @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car")
-   @Autowired
    private Car car;
 
    public User() {}
-   
+
+
    public User(String firstName, String lastName, String email, Car car) {
       this.firstName = firstName;
       this.lastName = lastName;
